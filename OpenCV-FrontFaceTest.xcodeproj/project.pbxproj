@@ -10,8 +10,8 @@
 		E1D453C52CBC08E200E4C796 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 6;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -20,11 +20,25 @@
 
 /* Begin PBXFileReference section */
 		E1D453C72CBC08E200E4C796 /* OpenCV-FrontFaceTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenCV-FrontFaceTest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D453DA2CBC110000E4C796 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		E1D453D92CBC105100E4C796 /* Exceptions for "OpenCV-FrontFaceTest" folder in "Copy Files" phase from "OpenCV-FrontFaceTest" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = E1D453C52CBC08E200E4C796 /* CopyFiles */;
+			membershipExceptions = (
+				haarcascade_frontalface_alt.xml,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E1D453C92CBC08E200E4C796 /* OpenCV-FrontFaceTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E1D453D92CBC105100E4C796 /* Exceptions for "OpenCV-FrontFaceTest" folder in "Copy Files" phase from "OpenCV-FrontFaceTest" target */,
+			);
 			path = "OpenCV-FrontFaceTest";
 			sourceTree = "<group>";
 		};
@@ -45,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				E1D453C92CBC08E200E4C796 /* OpenCV-FrontFaceTest */,
+				E1D453DA2CBC110000E4C796 /* README.md */,
 				E1D453C82CBC08E200E4C796 /* Products */,
 			);
 			sourceTree = "<group>";

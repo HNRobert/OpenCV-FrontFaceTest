@@ -15,8 +15,9 @@ using namespace cv;
 using namespace std;
 
 int main() {
-    // 加载预训练的人脸分类器（Haar 特征级联）
-    String face_cascade_name = "/Users/robert/Documents/RobertProgrammes/C++/OpenCV/OpenCV-FrontFaceTest/OpenCV-FrontFaceTest/haarcascade_frontalface_alt.xml";
+    // 加载一个效果不错的官方提供的预训练的人脸分类器
+    // 按照实际文件位置修改
+    String face_cascade_name = "/opt/homebrew/Cellar/opencv/4.10.0_11/share/opencv4/haarcascades/haarcascade_frontalface_alt.xml";
     CascadeClassifier face_cascade;
 
     // 检查是否成功加载分类器
