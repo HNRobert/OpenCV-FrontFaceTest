@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  OpenCV-LittleLittleBoard
+//  OpenCV-FrontFaceTest
 //
 //  Created by Robert He on 2024/9/26.
 //
