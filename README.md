@@ -72,15 +72,16 @@ brew list opencv
 
 ### 3.2 配置 OpenCV 库
 
-1. 在 Xcode 中点击项目名称，选择左边 ```Targets``` 栏下目标。
-2. 转到顶上 ```Build Settings``` 标签页。
-3. 筛选名称, 在 ```Search Paths``` 部分找到 ```Header Search Paths```，**单击右侧空白**添加 OpenCV 的头文件路径 ( **可将4.10.0_11替换为你的版本号**，截止2024/10/14这是最新版本 )： ```/opt/homebrew/Cellar/opencv/4.10.0_11/include/opencv4```
+1. 在 Xcode 中文件视图点击项目名称
+2. 选择左边 ```Targets``` 栏下目标。
+3. 转到顶上 ```Build Settings``` 标签页。
+4. 筛选名称, 在 ```Search Paths``` 部分找到 ```Header Search Paths```，**单击右侧空白**添加 OpenCV 的头文件路径 ( **可将4.10.0_11替换为你的版本号**，截止2024/10/14这是最新版本 )： ```/opt/homebrew/Cellar/opencv/4.10.0_11/include/opencv4```
    （如果是 **Intel Based Mac** 用户则可将其中的 ```/opt/homebrew``` 替换为 ```/local/usr```，**具体使用什么路径以上方 ```brew list opencv``` 显示结果为准， 下面所有类似路径同理**。）
-4. 找到 ```Library Search Paths```，单击其右侧空白添加 OpenCV 库文件路径： ```/opt/homebrew/Cellar/opencv/4.10.0_11/lib```
+5. 找到 ```Library Search Paths```，单击其右侧空白添加 OpenCV 库文件路径： ```/opt/homebrew/Cellar/opencv/4.10.0_11/lib```
 
    <img width="2032" alt="Screenshot 2024-10-14 at 03 12 24" src="https://github.com/user-attachments/assets/b2334403-9302-4b31-90cf-3819ba097cc7">
 
-5. 筛选找到同目录下 ```Other Linker Flags```，单击其右侧的输入框粘贴入下面内容。（菜单界面单击粘贴进去即可，完成后可以双击进去验证是否分行）
+6. 筛选找到同目录下 ```Other Linker Flags```，单击其右侧的输入框粘贴入下面内容。（菜单界面单击粘贴进去即可，完成后可以双击进去验证是否分行）
    ```-lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_objdetect -lopencv_videoio```
 
    <img width="2032" alt="Screenshot 2024-10-14 at 03 19 46" src="https://github.com/user-attachments/assets/6d048944-5af2-4363-9f32-c9a7c37205f5">
