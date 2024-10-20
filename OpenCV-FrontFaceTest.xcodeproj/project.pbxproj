@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		E1D453C72CBC08E200E4C796 /* OpenCV-FrontFaceTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenCV-FrontFaceTest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1D453DA2CBC110000E4C796 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E1D453DA2CBC110000E4C796 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
@@ -264,7 +264,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "OpenCV-FrontFaceTest/OpenCV-FrontFaceTest.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8RY46C6B44;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -275,7 +275,9 @@
 					"-lopencv_objdetect",
 					"-lopencv_videoio",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = HNRobert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -283,7 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "OpenCV-FrontFaceTest/OpenCV-FrontFaceTest.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8RY46C6B44;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -294,7 +296,9 @@
 					"-lopencv_objdetect",
 					"-lopencv_videoio",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = HNRobert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
