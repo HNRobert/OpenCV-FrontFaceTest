@@ -189,6 +189,8 @@ Undefined symbol: cv::imread(std::__1::basic_string<char, std::__1::char_traits<
 
 针对上面这种情况，是因为在其他代码中调用imread等功能时缺失imgcodecs库的链接导致的。我们需要在刚刚提到的```Other Linker Flags```里进行修改，添加这一项：```-lopencv_imgcodecs```
 
+<img width="1624" alt="image" src="https://github.com/user-attachments/assets/10fa8dfc-a178-4af1-813b-c717c616917b">
+
 对于报错其他**形状类似**的问题，也可能是相同的原因。我们可以灵活的利用搜索引擎或者AI工具提问来找到对应的库补全。不过平日开发里尽量不要将库全部一起链接，而是按需添加，否则可能会导致编译时的性能问题，以及影响打包后产生包的体积。
 
 ## 结语
